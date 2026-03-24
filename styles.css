@@ -286,6 +286,7 @@ body {
 @media (min-width: 768px) {
     .messages-grid {
         grid-template-columns: repeat(2, 1fr);
+        align-items: start;
     }
 }
 

@@ -277,16 +277,15 @@ body {
 }
 
 .messages-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    column-count: 1;
+    column-gap: 2rem;
     margin-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
     .messages-grid {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: start;
+        column-count: 2;
+        column-gap: 3rem;
     }
 }
 
@@ -296,6 +295,8 @@ body {
     padding: 2rem;
     border-radius: 4px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    break-inside: avoid;
+    margin-bottom: 2rem;
 }
 
 .message-card:hover {
@@ -328,7 +329,7 @@ body {
 }
 
 .message-author {
-    color: var(--primary-red);
+    color: var(--text-white);
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;

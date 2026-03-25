@@ -156,11 +156,11 @@ body {
     margin-bottom: 1.5rem;
     max-width: 100%;
     -webkit-text-stroke: 0.8px var(--text-white);
-    text-shadow: 
-        1px 1px 0 var(--primary-red),
-        -1px -1px 0 var(--primary-red),
-        1px -1px 0 var(--primary-red),
-        -1px 1px 0 var(--primary-red);
+    text-shadow:
+        0.75px 0.75px 0 var(--primary-red),
+        -0.75px -0.75px 0 var(--primary-red),
+        0.75px -0.75px 0 var(--primary-red),
+        -0.75px 0.75px 0 var(--primary-red);
 }
 
 @media (min-width: 768px) {
